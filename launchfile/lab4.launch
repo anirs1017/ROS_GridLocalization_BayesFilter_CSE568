@@ -1,0 +1,4 @@
+<launch>
+	<node name="readBag" pkg="lab4" type="BayesLocalization.py"  output="screen" args= "$(find lab4)/scripts/grid.bag $(find lab4)/results/trajectory.txt"/>
+	<node name="rviz" pkg="rviz" type="rviz" args= "$(find lab4)/rviz/config_rviz.rviz" />
+</launch>
